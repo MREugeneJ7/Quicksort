@@ -1,9 +1,6 @@
 package SoleteCorp.Quicksort;
 
-/**
- * Hello world!
- *
- */
+
 public class Quicksort  {
 
 	private int[] numbers;
@@ -113,5 +110,24 @@ public class Quicksort  {
 		numbers[j] = temp;
 
 	}
+	public static void main(String args[]) {
+		int tamano = 3;
+		int desordenado[] = new int[tamano];
+		int ordenado[] = new int[tamano];
+		for(int i = 0; i < tamano; i++) desordenado[i] = (int) (Math.random() * 1000);
+		System.out.println("desordenado");
+		for(int i = 0; i < tamano; i++) System.out.println(desordenado[i]);
+		Quicksort a = new Quicksort();
+		a.sort(desordenado);
+		ordenado = a.getNumbers();
+		System.out.println("ordenado");
+		for(int i = 0; i < tamano; i++) System.out.println(ordenado[i]);
+	}
 
+
+
+	public int[] getNumbers() {
+		// TODO Auto-generated method stub
+		return numbers;
+	}
 }

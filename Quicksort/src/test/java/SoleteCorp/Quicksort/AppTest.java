@@ -30,9 +30,17 @@ public class AppTest
 
     /**
      * Rigourous Test :-)
+     *  assertTrue( true );
      */
     public void testApp()
     {
-        assertTrue( true );
+    	int tamano = 1000;
+		int desordenado[] = new int[tamano];
+		int ordenado[] = new int[tamano];
+		for(int i = 0; i < tamano; i++) desordenado[i] = (int) (Math.random() * 1000);
+		Quicksort a = new Quicksort();
+		a.sort(desordenado);
+		ordenado = a.getNumbers();
+		for(int i = 0; i < tamano - 1; i++) assertTrue( ordenado[i] <= ordenado[i+1] );
     }
 }
