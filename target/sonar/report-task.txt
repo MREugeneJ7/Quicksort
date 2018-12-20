@@ -1,0 +1,6 @@
+projectKey=SoleteCorp:Quicksort
+serverUrl=http://localhost:9000
+serverVersion=7.3.0.15553
+dashboardUrl=http://localhost:9000/dashboard?id=SoleteCorp%3AQuicksort
+ceTaskId=AWfIYIFS5iBYn9bceN5r
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWfIYIFS5iBYn9bceN5r
