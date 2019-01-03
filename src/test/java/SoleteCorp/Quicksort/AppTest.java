@@ -41,6 +41,7 @@ public class AppTest
 		Quicksort a = new Quicksort();
 		a.sort(desordenado);
 		ordenado = a.getNumbers();
-		for(int i = 0; i < tamano - 1; i++) assertTrue( ordenado[i] <= ordenado[i+1] );
+		for(int i = 0; i < tamano - 1; i++) assertTrue( " " + ordenado[i] + " es menor que " + ordenado[i+1],ordenado[i] <= ordenado[i+1] );
+		for(int i = tamano - 1; i > 1; i--) assertTrue( " " + ordenado[i] + " es mayor que " + ordenado[i-1],ordenado[i] >= ordenado[i-1] );
     }
 }

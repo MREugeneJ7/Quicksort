@@ -111,7 +111,7 @@ public class Quicksort  {
 
 	}
 	public static void main(String args[]) {
-		int tamano = 3;
+		int tamano = 1600;
 		int desordenado[] = new int[tamano];
 		int ordenado[] = new int[tamano];
 		for(int i = 0; i < tamano; i++) desordenado[i] = (int) (Math.random() * 1000);
